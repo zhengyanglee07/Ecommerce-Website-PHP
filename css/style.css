@@ -1,0 +1,234 @@
+body{
+    background-image: url("../img/bg_img/indexBG.png");
+    background-size: cover;
+    position: relative;
+    min-height: 600px;
+}
+
+.container {
+    max-width: 960px;
+}
+
+.section {
+    padding: 30px 50px;
+    width: 90%;
+    margin: auto;
+}
+
+.section-shadow {
+    border-radius: 6px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+
+}
+.section-bgColor {
+
+    background: #C9D6FF; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #E2E2E2, #C9D6FF); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*---------------------------------------------------------------*/
+/*-----------------------------Header----------------------------*/
+/*---------------------------------------------------------------*/
+#nav{
+    opacity: 0.9;
+    text-decoration: none;
+    /*background-image: linear-gradient(90deg, rgba(207,239,247,1) 0%, rgba(245,255,253,1) 52%, rgba(197,239,247,1) 100%);*/
+    background: linear-gradient(270deg, #FFFFFF, #92CAE4);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+#nav a:hover{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+@font-face {
+    font-family: "IBM Plex Sans Roman";
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/85648/IBMPlexSansVar-Roman.ttf");
+}
+
+#logo {
+    font-family: "IBM Plex Sans Roman", Times;
+    min-height: 20px;
+    width: 150px;
+    margin: 15px 30px;
+    color: blue;
+}
+
+#logo .char {
+    font-weight: 100;
+    font-size: 20px;
+    text-decoration: none;
+    font-variation-settings: 'wght' 100, 'wdth' 85;
+}
+
+#logo .char {
+    --delay: calc((var(--char-index) + 1) * 400ms);
+    animation: breathe 4500ms infinite both;
+    animation-delay: var(--delay);
+}
+
+#logo :hover .char{
+    animation-play-state: paused;
+}
+
+@keyframes breathe {
+    0% {
+        font-variation-settings: 'wght' 100, 'wdth' 85;
+        font-size: 20px;
+    }
+    60% {
+        font-variation-settings: 'wght' 700, 'wdth' 100;
+        font-size: 22px;
+    }
+
+    100% {
+        font-variation-settings: 'wght' 100, 'wdth' 85;
+        font-size: 20px;
+    }
+}
+/*end-Animation Font*/
+
+#logo img{
+    width: 80px;
+    height: 50px;
+}
+
+#select-categ{
+    height: 50px;
+    margin-right: -6px;
+    border-radius: 40px 0 0 40px;
+}
+#select-categ form{
+    position: relative;
+}
+
+#search{
+    margin: 15px 0;
+    height: 50px;
+    width : 200px;
+    margin-right: -5px;
+}
+
+#search-btn{
+    margin-top : -5px;
+    height: 50px;
+    width: 100px;
+    border-radius: 0 40px 40px 0;
+
+}
+
+.icon{
+    margin: 15px 0;
+    width: 50px;
+    height: 50px;
+}
+.cart-product{
+    margin:0;
+    padding: 0;
+}
+.cart-product-img{
+    width: 70px;
+    height: 62px;
+}
+.cart-detail li{
+    display: inline-block;
+}
+
+#qty {
+    position: absolute;
+    right: 40%;
+    top: 20%;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 10px;
+    color: #FFF;
+    background-color: #0056b3;
+}
+/*----------------------------end-Header-------------------------*/
+
+
+/*-------------------------------------Footer--------------------------------------*/
+
+.payment-method li{
+    display: inline-block;
+    list-style: none;
+    font-size: 60px;
+}
+.contactUs-link li{
+    font-size: 25px;
+    list-style: none;
+    text-decoration: none;
+    padding-right: 10px;
+
+}
+.contactUs-link li i{
+    width: 30px;
+}
+.delivery li{
+    list-style: none;
+    width: 130px;
+    height: 80px;
+    display: inline-block;
+}
+.delivery li img{
+    width: 100%;
+    height: 100%;
+}
+footer h3{
+    padding-left: 35px;
+}
+
+/*----------------------------------end-Footer--------------------------------------*/
+
+/*-------------------------------------------------------------------------------------*/
+/*-----------------------------Style for information show------------------------------*/
+/*-------------------------------------------------------------------------------------*/
+.error, .info
+{
+    padding: 5px;
+    margin: 5px;
+    font-size: 0.9em;
+    list-style-position: inside;
+}
+
+.error
+{
+    border: 2px solid #FBC2C4;
+    background-color: #FBE3E4;
+    color: #8A1F11;
+}
+
+.info
+{
+    border: 2px solid #92CAE4;
+    background-color: #D5EDF8;
+    color: #205791;
+}
+
+/*Gradient Color move with mouse*/
+.radial-gradient {
+
+    background:
+            radial-gradient(
+                    at center, #92CAE4, #FFFFFF
+            );
+}
+

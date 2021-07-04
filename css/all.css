@@ -1,0 +1,526 @@
+.ckBox{
+    transform: scale(2);
+}
+/*show product*/
+.preview-img img{
+    width: 100%;
+    height: 100%;
+}
+.preview-img a div{
+    height: 150px;
+}
+.preview-img a:hover div{
+    border: 1px solid blue;
+}
+
+/*Zoom Image*/
+.zoom {
+    display:inline-block;
+    position: relative;
+}
+
+.zoom img {
+    display: block;
+}
+
+.zoom img::selection { background-color: transparent; }
+/*end-Zoom Image*/
+
+.product-available{
+    color: red;
+    font-size: 15px;
+}
+
+.product-rating,.review-link{
+    display: inline-block;
+}
+
+.review-link{
+    color: #16181b;
+    font-size: 18px;
+}
+
+.product-options p{
+    display: inline-block;
+    width: 70px;
+    color: #16181b;
+}
+.product-options label{
+    display: block;
+}
+.product-options .input-select{
+    padding: 5px 30px 5px 10px;
+}
+.product-options label{
+    font-size:17px;
+}
+.cart-btn, .buy-btn{
+    width: 150px;
+    padding: 15px;
+    margin: 20px 5px;
+}
+.cart-btn{
+    border-radius: 20px 0 0 40px;
+}
+.buy-btn{
+    border-radius: 0 40px 20px 0;
+    background-color: #0b75c9;
+}
+
+
+
+/*Product Detail ,description and review*/
+#product-tab{
+    position: relative;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/*------------------------Rating------------------------*/
+.rating-avg {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.rating-avg .rating-stars, .rating .rating-stars {
+    display: inline-block;
+}
+
+.rating-avg .rating-stars>i, .rating .rating-stars>i {
+    color: #E4E7ED;
+}
+
+.rating-avg .rating-stars>i.fa-star, .rating .rating-stars>i.fa-star {
+    color: yellow;
+}
+
+.rating li {
+    list-style: none;
+}
+
+.rating .rating-progress {
+    position: relative;
+    display: inline-block;
+    height: 9px;
+    background-color: #E4E7ED;
+    width: 120px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.rating .rating-progress div {
+    background-color: yellow;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 5px;
+}
+
+.rating .sum {
+    display: inline-block;
+    font-size: 12px;
+    color: #8D99AE;
+}
+
+/*-- Reviews --*/
+
+.reviews li {
+    position: relative;
+    padding-left: 145px;
+    margin-bottom: 30px;
+    list-style: none;
+}
+
+.reviews .review-heading {
+    position: absolute;
+    width: 130px;
+    left: 0;
+    top: 0;
+    height: 70px;
+}
+
+.reviews .review-body {
+    min-height: 70px;
+    text-align: left;
+}
+
+.reviews .review-heading .name {
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.reviews .review-heading .date {
+    color: #8D99AE;
+    font-size: 10px;
+    margin: 0;
+}
+
+.reviews .review-heading .review-rating {
+    margin-top: 5px;
+}
+
+.reviews .review-heading .review-rating>i {
+    color: #E4E7ED;
+}
+
+.reviews .review-heading .review-rating>i.fa-star {
+    color: yellow;
+}
+
+.reviews-pagination {
+    text-align: center;
+}
+
+.reviews-pagination li {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #FFF;
+    border: 1px solid #E4E7ED;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+.reviews-pagination li:hover {
+    background-color: #E4E7ED;
+    color: blue;
+}
+
+.reviews-pagination li.active {
+    background-color: blue;
+    border-color: blue;
+    color: #FFF;
+    cursor: default;
+}
+
+.reviews-pagination li a {
+    display: block;
+}
+
+/*----------- Review Form -------------------*/
+#review-form{
+    padding: 10px;
+}
+.review-form .input {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.review-form .input-rating {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.input-rating div{
+    font-size: 20px;
+    display: inline-block;
+}
+.review-form .input-rating .stars {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 30px;
+}
+
+.review-form .input-rating .stars input[type="radio"] {
+    display: none;
+}
+
+.review-form .input-rating .stars>label {
+    float: right;
+    cursor: pointer;
+    padding: 0 3px;
+    margin: 0;
+}
+
+.review-form .input-rating .stars>label:before {
+    content: "\f006";
+    color: #E4E7ED;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+.review-form .input-rating .stars>label:hover:before, .review-form .input-rating .stars>label:hover~label:before {
+    color: yellow;
+}
+
+.review-form .input-rating .stars>input:checked label:before, .review-form .input-rating .stars>input:checked~label:before {
+    content: "\f005";
+    color: yellow
+}
+.review-submit{
+    border-radius: 40px;
+    padding: 10px 40px;
+
+}
+/*-------------------------------------Category--------------------------------------*/
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+table{
+    border: 1px solid lightgrey;
+}
+table th{
+    text-align: center;
+    margin-left: -10px;
+    font-size: 30px;
+}
+table td {
+    text-align: center;
+
+}
+
+.product-list-type li {
+    display: inline-block;
+}
+
+.product-list-type i {
+    padding: 10px;
+}
+
+.product-list-type a:hover {
+    color: blue;
+}
+
+.input-select {
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.product img{
+    height: 250px;
+    border: 1px solid lightgrey;
+}
+.product{
+    background-color: whitesmoke ;
+    margin: 0 15px 15px 15px;
+    padding: 0;
+}
+
+.product-current-price{
+    font-size: 20px;
+}
+.product-body{
+    height: 130px;
+    border: 1px solid lightgrey;
+    background-color: whitesmoke;
+}
+.product a{
+    text-decoration: none;
+}
+
+
+/*-------------------------------------end_category--------------------------------------*/
+
+
+
+/*-------------------------------------Check Out--------------------------------------*/
+
+.order{
+    padding: 10px 0;
+}
+.orderItems{
+    width: 400px;
+}
+.order-detail table th{
+    background-color: white;
+    width: 200px;
+    padding: 10px;
+}
+.order-detail table td{
+    background-color: white;
+}
+.current-price{
+    color: #a0180c;
+    font-size: 20px;
+    margin:0;
+    padding: 0;
+}
+.old-price{
+    color: #323131;
+    font-size: 15px;
+}
+.discount{
+    font-size: 16px;
+}
+/*Order Detail*/
+.detail-header, .detail-footer, .detail-footer a{
+    height: 50px;
+    width:100%;
+    font-size: 20px;
+    background-color: #00a5bb;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    transition: 0.2s all;
+}
+.detail-body{
+    padding: 10px;
+}
+.user-information, .order-total{
+    text-align: left;
+    padding: 10px;
+}
+.user-information li, .order-total li{
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
+    list-style: none;
+    width: 100%;
+}
+.user-information li span, .order-total li span{
+    position: absolute;
+    right: 0;
+}
+.user-information li i{
+    width: 20px;
+}
+.detail-footer:hover{
+    transform: scale(1.1);
+  }
+
+/*-------------------------------------end-Check out--------------------------------------*/
+
+/*-------------------------------------Payment--------------------------------------*/
+.back-btn{
+    padding: 5px 15px;
+    margin-bottom: 15px;
+}
+.payMethod div{
+    width: 200px;
+    height: 150px;
+}
+.payMethod img{
+    width: 100%;
+    height: 100%;
+}
+
+.payment-method-icon li{
+    display: inline-block;
+}
+.payment-method-icon li i{
+    font-size: 20px;
+}
+.creditOrdebit{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+.creditOrdebit input{
+    width: 500px;
+}
+.pay-online{
+    padding: 50px;
+    position: relative;
+}
+.pay-online div{
+    width: 130px;
+    height: 100px;
+    padding: 10px;
+    display: inline-block;
+    transition: 0.2s all;
+}
+
+.pay-online img{
+    width: 100%;
+    height: 100%;
+}
+.pay-online div:hover img{
+    transform: scale(1.2);
+}
+/*------------------------------------end-payment--------------------------------------*/
+
+/*-------------------------------------Feedback----------------------------------------*/
+.feedbackForm{
+    padding: 0 120px;
+}
+.feedback{
+    font-size: 25px;
+    margin: 10px;
+    padding: 50px;
+    background-color: #9fcdff;
+    border-radius: 30px;
+    box-shadow: 10px 15px lightsteelblue;
+}
+.feedback input{
+    text-align: center;
+}
+
+.feedback p{
+    padding: 10px 0 0 0;
+    margin: 0;
+}
+.feedback-name{
+    width: 46%;
+}
+.company-info li{
+    padding: 10px 0;
+    list-style: none;
+    display: inline-block;
+    font-size: 22px;
+    text-align: left;
+    font-weight: bold;
+    width: 100%;
+}
+.company-info span, .company-info p{
+    font-size: 20px;
+    text-align: left;
+    font-weight: lighter;
+}
+
+/*-------------------------------------Feedback-------------------------------------*/
+
+
+/*-------------------------------------My Profile-------------------------------------*/
+.user_profile{
+    background-image: url(../img/bg_img/profile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.user_pic{
+    border: 6px double lightseagreen;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    background-image: url(../img/icon/userProfile.png);
+    background-size: cover;
+}
+
+.user_name{
+    position: absolute;
+    font-size: 25px;
+    font-family: "Open Sans", sans-serif;
+    left: 220px;
+    bottom: 50px;
+}
+.view_order_header{
+    margin-bottom: 50px;
+}
+.order_view a:hover .order_icon{
+    transform: scale(1.3);
+}
+.order_icon{
+    width: 250px;
+    height: 200px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+/*------------------------------------end-My Profile-------------------------------------*/
